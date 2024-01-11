@@ -1,0 +1,22 @@
+// testing
+
+$persegi = new Persegi(10);
+$luasPersegi = $persegi->area();
+$kelilingPersegi = $persegi->circumference();
+
+echo "Luas persegi = {$luasPersegi}\nKeliling Persegi = {$kelilingPersegi}\n";
+echo "========================================================================\n";
+
+$persegiEnlarge = $persegi->enlarge(5);
+$luasEnlarge = $persegiEnlarge->area();
+$kelilingEnlarge = $persegiEnlarge->circumference();
+$sisiEnlarge = $persegiEnlarge->getSisi();
+
+$persegiShrink = $persegi->shrink(5);
+$luasShrink = $persegiShrink->area();
+$kelilingShrink = $persegiShrink->circumference();
+$sisiShrink = $persegiShrink->getSisi();
+
+echo "luas persegi Enlarge: {$luasEnlarge}\nkeliling persegi Enlarge: {$kelilingEnlarge}\nsisi Enlarge: {$sisiEnlarge}\n";
+echo "========================================================================\n";
+echo "luas persegi Shrink: {$luasShrink}\nkeliling persegi Shrink: {$kelilingShrink}\nsisi Shrink: {$sisiShrink}\n";
